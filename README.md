@@ -1,5 +1,6 @@
 # sqlite-nailmap
 Import "Nail Salon Addresses - Cleaned June 11, 2020.xlsx" into db.sqlite
+
 import "export-customer.xlsx" to exclude db2.sqlite2
 
 "SQL Clause"
