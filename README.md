@@ -13,7 +13,9 @@ join tbAddress ta on ta.IDCustomer = tc.ID
 join tbUSZIP tu on tu.ID= ta.IDUSZip
 join tbLead tl on tl.IDCustomer = tc.ID
 where tl.IDLeadStatus = 5
+
 union
+
 select tc.Company, ta.StreetAddress, tu.PlaceName, tu.StateCode, ta.IDUSZip
 from tbCustomer tc
 join tbAddress ta on ta.IDCustomer = tc.ID
